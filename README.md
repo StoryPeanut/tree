@@ -17,6 +17,55 @@
 | treeData |  所有节点对象  | 
 | type |  'click': 单击事件，'dbclick':双击事件，'open':节点打开关闭事件 | 
 
+## tree-list 源数据格式
+```javascript
+treeList: [{
+  id: 0,
+  clickNode: false,
+  isFolder: false,
+  parentId: -1,
+  parentName: '',
+  userId: 101,
+  userName: 'A级用户1',
+  children: [{
+    id: 1,
+    clickNode: false,
+    isFolder: false,
+    parentId: 101,
+    parentName: 'A级用户1',
+    userId: 201,
+    userName: 'B级用户1',
+    children: [{
+      id: 11,
+      clickNode: false,
+      isFolder: false,
+      parentId: 201,
+      parentName: 'B级用户2',
+      userId: 311,
+      userName: 'C级用户11',
+      children: []
+    }]
+  },{
+    id: 2,
+    clickNode: false,
+    isFolder: false,
+    parentId: 101,
+    parentName: 'A级用户1',
+    userId: 202,
+    userName: 'B级用户2',
+    children: [{
+      id: 3,
+      clickNode: false,
+      isFolder: false,
+      parentId: 202,
+      parentName: 'B级用户2',
+      userId: 301,
+      userName: 'C级用户1',
+      children: []
+    }]
+  }]
+}]
+```
 ## Build Setup
 
 ``` bash
